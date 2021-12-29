@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/pip-blender.obj-ba7b7cd27069280d7ee16a1115724e67.mesh"
+
+[deps]
+
+files=[ "res://.import/pip-blender.obj-ba7b7cd27069280d7ee16a1115724e67.mesh" ]
+
+source_file="res://meshes/pip-blender.obj"
+dest_files=[ "res://.import/pip-blender.obj-ba7b7cd27069280d7ee16a1115724e67.mesh", "res://.import/pip-blender.obj-ba7b7cd27069280d7ee16a1115724e67.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/lost-sound.wav-d386d8fe911bfc9e9e8508ccf427b5b2.sample"
+
+[deps]
+
+source_file="res://sfx/lost-sound.wav"
+dest_files=[ "res://.import/lost-sound.wav-d386d8fe911bfc9e9e8508ccf427b5b2.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

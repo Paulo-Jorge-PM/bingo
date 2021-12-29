@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://gdnative/librust_numbers_gen.gdns" type="Script" id=1]
+
+[node name="GDNative-Rust" type="Node"]
+script = ExtResource( 1 )

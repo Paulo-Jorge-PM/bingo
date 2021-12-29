@@ -1,0 +1,42 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://textures/Numbers_32_Dark/5.png" type="Texture" id=1]
+[ext_resource path="res://scripts/ball-template.gd" type="Script" id=4]
+[ext_resource path="res://textures/bg-alpha.png" type="Texture" id=5]
+
+[sub_resource type="PhysicsMaterial" id=9]
+rough = true
+
+[sub_resource type="SphereShape" id=4]
+margin = 0.02
+radius = 0.15
+
+[sub_resource type="SphereMesh" id=1]
+radius = 0.15
+height = 0.3
+
+[sub_resource type="SpatialMaterial" id=8]
+albedo_color = Color( 1, 0, 0, 1 )
+albedo_texture = ExtResource( 5 )
+metallic_specular = 1.0
+roughness = 0.0
+
+[node name="ball-template" type="RigidBody"]
+mass = 10.0
+physics_material_override = SubResource( 9 )
+script = ExtResource( 4 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 4 )
+
+[node name="ball" type="MeshInstance" parent="CollisionShape"]
+mesh = SubResource( 1 )
+skeleton = NodePath("../../..")
+material/0 = SubResource( 8 )
+
+[node name="Sprite3D" type="Sprite3D" parent="CollisionShape/ball"]
+visible = false
+pixel_size = 0.004
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
